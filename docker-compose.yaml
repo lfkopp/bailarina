@@ -1,0 +1,13 @@
+services:
+  bailarina:
+    build:
+      context: "."
+      dockerfile: "dev.Dockerfile"
+    container_name: "bailarina"
+    restart: "unless-stopped"
+    environment:
+      - "DEBUG=0"
+      - "HOST=0.0.0.0"
+      - "PORT=5000"
+    ports:
+      - "40002:5000"
