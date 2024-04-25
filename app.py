@@ -2,10 +2,18 @@ from os import getenv
 from flask import Flask, render_template
 
 app = Flask(__name__)
-
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 @app.route('/')
 def hello():
+    return render_template('index.html')
+
+@app.route('/movimentacao')
+def movimentacao():
+    return render_template('movimentacao.html')
+
+@app.route('/referencia')
+def referencia():
     return render_template('index.html')
 
 
