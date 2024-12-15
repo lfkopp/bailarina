@@ -351,7 +351,7 @@ h6 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-family: "Satisfy", serif;
-  color: #fff;
+  color: #ffb727;
 }
 
 #hero h2 {
@@ -838,12 +838,13 @@ section {
 
 .testimonials .testimonial-item p {
   font-style: italic;
+  font-size: 20px;
   margin: 0 auto 15px auto;
   color: #eee;
 }
 
 .testimonials .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 24px;
   position: relative;
 }
 
@@ -920,13 +921,14 @@ section {
   font-size: 18px;
   color: #fff;
   font-weight: 600;
-  color: #fff;
   margin-bottom: 0px;
 }
 
+
+
 .portfolio .portfolio-item .portfolio-info p {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 0;
 }
 
@@ -1360,4 +1362,10 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+
+.fotopb{
+filter: grayscale(1) ;
+-webkit-filter: grayscale(100%); 
+mix-blend-mode: multiply;
 }
