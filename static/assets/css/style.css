@@ -66,6 +66,17 @@ h6 {
   opacity: 1;
 }
 
+
+  .portfolio-details-slider .swiper-button-next,
+  .portfolio-details-slider .swiper-button-prev {
+    color: #ffb727; /* Cor do tema */
+  }
+  .portfolio-details-slider .swiper-pagination-bullet-active {
+    background-color: #ffb727;
+  }
+
+  
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/

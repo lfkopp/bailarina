@@ -249,3 +249,28 @@
   new PureCounter();
 
 })()
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.portfolio-details-slider', {
+      speed: 600,
+      loop: true,
+      autoplay: {
+        delay: 5000, // Tempo em milissegundos (5 segundos)
+        disableOnInteraction: false
+      },
+      slidesPerView: 1, // Garante que mostre um slide por vez
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  });
+
+  
