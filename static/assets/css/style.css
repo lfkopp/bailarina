@@ -96,6 +96,41 @@ h6 {
   background: rgba(25, 28, 31, 0.8);
 }
 
+
+
+/* Estilo específico para o link do WhatsApp na Navbar */
+.navbar .whatsapp-nav {
+  background: transparent;
+  color: #25d366 !important; /* Cor verde oficial */
+  border: 2px solid #25d366;
+  border-radius: 50px;
+  padding: 8px 20px !important;
+  margin-left: 15px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.navbar .whatsapp-nav i {
+  margin-left: 5px;
+  font-size: 1.1rem;
+}
+
+.navbar .whatsapp-nav:hover {
+  background: #25d366 !important;
+  color: #fff !important;
+  border-color: #25d366;
+}
+
+/* Ajuste para o menu mobile (para o botão não ocupar a largura toda estranhamente) */
+@media (max-width: 991px) {
+  .navbar .whatsapp-nav {
+    margin: 10px 20px !important;
+    text-align: center;
+    display: inline-block;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
