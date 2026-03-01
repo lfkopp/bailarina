@@ -76,7 +76,110 @@ h6 {
   }
 
   
+/*--------------------------------------------------------------
+# Seção Canal do WhatsApp (Customizada para o Site Renata Versiani)
+--------------------------------------------------------------*/
+.cta-whatsapp {
+  padding: 80px 0;
+  background: #fff; /* Fundo limpo para destacar do cinza das seções adjacentes */
+}
 
+.cta-whatsapp .cta-box {
+  padding: 50px 30px;
+  background: #fff;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  text-align: center;
+  border-top: 5px solid #25d366; /* Linha de destaque na cor do WhatsApp */
+  transition: transform 0.3s ease-in-out;
+}
+
+.cta-whatsapp .cta-box:hover {
+  transform: translateY(-5px); /* Efeito suave de levitação ao passar o mouse */
+}
+
+.cta-whatsapp .icon-whatsapp {
+  margin-bottom: 20px;
+}
+
+.cta-whatsapp .icon-whatsapp i {
+  font-size: 32px;
+  background: #e7f9ee; /* Verde bem clarinho de fundo */
+  color: #25d366;
+  padding: 18px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.cta-whatsapp h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4b4949;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 15px;
+}
+
+.cta-whatsapp p {
+  color: #777;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-whatsapp p small {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #999;
+}
+
+/* Botão de Ação Estilizado */
+.btn-whatsapp-cta {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 35px;
+  border-radius: 50px;
+  transition: 0.5s;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp-cta:hover {
+  background: #128c7e;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(18, 140, 126, 0.4);
+}
+
+/* Nota de Rodapé LGPD */
+.lgpd-text {
+  display: block;
+  margin-top: 25px;
+  font-size: 11px;
+  color: #bbb;
+  font-style: italic;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 768px) {
+  .cta-whatsapp {
+    padding: 60px 15px;
+  }
+  .cta-whatsapp h3 {
+    font-size: 22px;
+  }
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
