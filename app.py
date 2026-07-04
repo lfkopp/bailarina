@@ -12,6 +12,11 @@ def hello():
 def movimentacao():
     return render_template('movimentacao.html')
 
+@app.route('/versiani')
+@app.route('/versianicultural')
+def versiani():
+    return render_template('versianicultural.html')
+
 @app.route('/referencia')
 def referencia():
     return render_template('referencia.html')

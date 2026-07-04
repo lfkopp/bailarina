@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Versiani Cultural | Produção Artística e Direção de Movimento</title>
+  <meta content="Versiani Cultural é a produtora de cultura de Renata Versiani, com projetos pela Lei Rouanet e espetáculos infantis que integram tecnologia e poesia." name="description">
+  <meta content="produção cultural, Versiani Cultural, Renata Versiani, Lei Rouanet, Inventor de Inutilidades, Manoel de Barros" name="keywords">
+
+  <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
+
+</head>
+
+<body class="versiani-page">
+
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto" href="/">Home</a></li>
+        <li><a class="nav-link" href="/versiani">Versiani Cultural</a></li>
+        <li><a class="nav-link scrollto" href="/movimentacao">Movimentação</a></li>
+        <li><a class="nav-link scrollto" href="/referencia">Referência</a></li>
+        <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
+        <li><a class="nav-link whatsapp-nav" href="https://whatsapp.com/channel/0029VbCtZYKDeOMysH5dMZ3W" target="_blank" rel="noopener noreferrer">Comunidade <i class="bi bi-whatsapp"></i></a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+  </header>
+  
+  <section id="hero" class="hero-versiani" style="background-image: url('/static/assets/img/inventor/palco.jpg'); background-size: cover; background-position: center;">
+    <div class="hero-container">
+      <h1 class="serif-title">Versiani Cultural</h1>
+      <h2>Produção artística, direção de movimento e pesquisa cênica com impacto social</h2>
+      <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Sobre a Versiani Cultural</span>
+          <h2>Sobre a Versiani Cultural</h2>
+        </div>
+
+        <div class="row">
+          <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start" style="background-image: url('/static/assets/img/inventor/gui-branco.jpg')"></div>
+          <div class="col-lg-8 d-flex flex-column align-items-stretch">
+            <div class="content ps-lg-4 d-flex flex-column justify-content-center">
+              <p class="mb-3"><img src="{{ url_for('static', filename='assets/img/versianicultural/logo vrs.jpg') }}" alt="Versiani Cultural" style="max-width:220px; height:auto;"></p>
+              <p style="text-align: justify;">A <strong>Versiani Cultural</strong> é a produtora fundada por Renata Versiani em 2026, dedicada a projetos de direção de movimento, dramaturgia e ações culturais para públicos infantis e familiares. A empresa nasce da experiência acumulada em dança, pesquisa e produção para oferecer espetáculos com forte potencial de engajamento e impacto social.</p>
+              <p style="text-align: justify;">O primeiro projeto executado pela produtora é <strong>Inventor de Inutilidades</strong>, aprovado e viabilizado pelo PRONAC nº <strong>2511892</strong>, com patrocínio da <strong>Paineiras</strong> e do <strong>AquaRio</strong>. A proposta une poesia, tecnologia e acessibilidade em um espetáculo pensado para crianças, famílias e escolas.</p>
+              <p style="text-align: justify;">A produção integra a pesquisa acadêmica de Renata: ela concluiu em 2026 o mestrado profissional em dança <strong>PPGPDAN</strong> na Faculdade Angel Vianna (FAV), trazendo esse conhecimento para a pesquisa cênica, a formação de público e a concepção de trabalhos autorais.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="video" class="portfolio-details py-5">
+      <div class="container">
+        <div class="section-title">
+          <span>Vídeo</span>
+          <h2>Entrevista — TV ALERJ</h2>
+          <p>Trecho da entrevista de Renata Versiani sobre o espetáculo Inventor de Inutilidades.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <video controls width="100%">
+                    <source src="{{ url_for('static', filename='assets/video/alerj.mp4') }}" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                  </video>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projeto" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Projeto</span>
+          <h2>Inventor de Inutilidades</h2>
+          <p>Um espetáculo infantil inspirado em Manoel de Barros, que transforma o cotidiano em poesia visual e sensorial.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-book"></i></div>
+              <h4 class="title"><a href="#">Referência</a></h4>
+              <p class="description">Baseado em <strong>Manoel de Barros</strong>, o espetáculo valoriza a imaginação, a lente sobre o óbvio e o brincar com objetos do dia a dia.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-people-fill"></i></div>
+              <h4 class="title"><a href="#">Acessibilidade</a></h4>
+              <p class="description">Sessões com Libras, audiodescrição e atendimento especializado, além de ingressos gratuitos para escolas públicas em datas selecionadas.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-graph-up"></i></div>
+              <h4 class="title"><a href="#">Razão de Patrocinar</a></h4>
+              <p class="description">Sua marca se associa a cultura infantil de qualidade, responsabilidade social e presença em projetos aprovados pela Lei Rouanet.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gy-4 mt-4">
+          <div class="col-md-6">
+            <div class="icon-box light-card">
+              <div class="icon"><i class="bi bi-clock-history"></i></div>
+              <h4>Temporada</h4>
+              <p>16 a 31 de maio de 2026 na Sala Maria Theresa Tápias, Barra da Tijuca, Rio de Janeiro.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="icon-box light-card d-flex gap-3 align-items-center">
+              <div style="max-width:140px;"><img src="{{ url_for('static', filename='assets/img/inventor/folder.jpg') }}" class="img-fluid" alt="Folder do Espetáculo"></div>
+              <div>
+                <h4>Realização</h4>
+                <p>Produção da Versiani Cultural em parceria com Espaço Tápias, com recursos incentivados e visibilidade para patrocinadores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="galeria" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Fotos</span>
+          <h2>Imagens do projeto</h2>
+          <p>Seleção de cenas e fotos de divulgação do Inventor de Inutilidades.</p>
+        </div>
+
+        <div class="row gy-4 project-composition">
+          <div class="col-lg-6">
+            <div class="d-flex flex-column gap-3">
+              <div class="project-vert">
+                <img src="{{ url_for('static', filename='assets/img/inventor/gui-1.jpg') }}" alt="Cena vertical 1">
+              </div>
+              <div class="project-horiz">
+                <img src="{{ url_for('static', filename='assets/img/inventor/gui-2.jpg') }}" alt="Cena horizontal 1">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex flex-column gap-3">
+              <div class="project-horiz">
+                <img src="{{ url_for('static', filename='assets/img/inventor/gui-3.jpg') }}" alt="Cena horizontal 2">
+              </div>
+              <div class="project-vert">
+                <img src="{{ url_for('static', filename='assets/img/inventor/gui_renata.jpg') }}" alt="Cena vertical 2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="patrocinadores" class="services section-bg-soft">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Patrocinadores</span>
+          <h2>Parceiros e patrocínio</h2>
+          <p>A Versiani Cultural já conta com o apoio de patrocinadores como Paineiras e AquaRio. A empresa oferece vantagens claras para novos parceiros que investem em cultura, infância e imagem institucional.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="icon-box light-card">
+              <div class="icon"><i class="bi bi-droplet-half"></i></div>
+              <h4>Paineiras</h4>
+              <p>Patrocinador do projeto, com exposição de marca em materiais de divulgação e ações de relacionamento com famílias.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="icon-box light-card">
+              <div class="icon"><i class="bi bi-water"></i></div>
+              <h4>AquaRio</h4>
+              <p>Parceiro institucional que associa sua marca a um projeto infantil inclusivo e que dialoga com educação e sensibilização.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="icon-box light-card">
+              <div class="icon"><i class="bi bi-award"></i></div>
+              <h4>Vantagens para patrocinadores</h4>
+              <p>Visibilidade em conteúdo cultural, associação a um projeto educativo e possibilidade de benefícios fiscais via Lei Rouanet.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="icon-box light-card">
+              <div class="icon"><i class="bi bi-people-circle"></i></div>
+              <h4>Retorno social</h4>
+              <p>Associação com um projeto que valoriza acessibilidade, inclusão e formação de novos públicos para as artes.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="icon-box light-card">
+              <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
+              <h4>Impacto de comunicação</h4>
+              <p>Presença de marca em press releases, redes sociais e materiais de divulgação para públicos familiares e escolares.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <span>Contato</span>
+          <h2>Contato</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="info-box">
+              <i class="bi bi-telephone-fill"></i>
+              <h3>Produção Cultural</h3>
+              <p>Para parcerias, patrocínios e projetos artísticos, fale conosco por email ou pelo canal de atendimento.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box mt-4 mt-md-0">
+              <i class="bi bi-envelope-fill"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:contato@versianicultural.com.br">contato@versianicultural.com.br</a><br>@versianicultural</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="whatsapp-canal" class="cta-whatsapp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="cta-box">
+              <div class="icon-whatsapp" style="font-size: 40px; color: #25d366; margin-bottom: 15px;">
+                <i class="bi bi-whatsapp"></i>
+              </div>
+              <h3>Comunidade Versiani Cultural</h3>
+              <p>Receba novidades sobre projetos, espetáculos e oportunidades de patrocínio em primeira mão.</p>
+              <p><small>Para parceiros, artistas e apoiadores que desejam acompanhar o desenvolvimento do trabalho com cuidado e estilo.</small></p>
+              <a href="https://whatsapp.com/channel/0029VbCtZYKDeOMysH5dMZ3W" class="btn-whatsapp-cta" target="_blank" rel="noopener noreferrer">
+                Acessar Canal Oficial
+              </a>
+              <span class="lgpd-text">O canal preserva seu número e permite saída a qualquer momento.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+</body>
+
+</html>

@@ -855,6 +855,26 @@ section {
   border: 2px solid #82909c;
 }
 
+/* Resume cards layout for Experiência Profissional */
+.resume-cards {
+  padding: 10px 0;
+}
+.resume-cards .resume-item {
+  margin-bottom: 18px;
+  background: #fff;
+  padding: 18px;
+  border-radius: 6px;
+  border-left: 4px solid #82909c;
+  box-shadow: 0 6px 18px rgba(13, 22, 33, 0.06);
+}
+.resume-cards .resume-item h4 { color: #ffb727; }
+.resume-cards .resume-item h5 { background: #eef0f2; padding: 4px 10px; display: inline-block; font-weight:600; }
+.resume-cards .resume-item.highlight { border-left-color: #ffb727; background: #fff8e6; }
+
+@media (max-width: 991px) {
+  .resume-cards .resume-item { padding: 14px; }
+}
+
 /*--------------------------------------------------------------
 # My Services
 --------------------------------------------------------------*/
@@ -1107,6 +1127,23 @@ section {
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
 }
+
+/* Versiani project composition: preserve original aspect ratio
+   Images keep width:100% and height:auto so heights follow image aspect ratio. */
+.project-composition .project-vert,
+.project-composition .project-horiz {
+  /* containers flow with content height; do not set fixed heights */
+  overflow: visible;
+}
+.project-composition img {
+  width: 100%;
+  height: auto; /* preserve original aspect ratio */
+  object-fit: contain;
+  display: block;
+}
+
+/* If you prefer to limit very tall images, uncomment the max-height rule below */
+/* .project-composition .project-vert img { max-height: 900px; } */
 
 /*--------------------------------------------------------------
 # Portfolio Details
