@@ -80,34 +80,28 @@ h6 {
 # Seção Canal do WhatsApp (Customizada para o Site Renata Versiani)
 --------------------------------------------------------------*/
 .cta-whatsapp {
-  padding: 80px 0;
-  background: #fff; /* Fundo limpo para destacar do cinza das seções adjacentes */
+  padding: 36px 0;
+  background: #fff;
 }
 
 .cta-whatsapp .cta-box {
-  padding: 50px 30px;
-  background: #fff;
-  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
+  padding: 20px 20px 24px;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
   text-align: center;
-  border-top: 5px solid #25d366; /* Linha de destaque na cor do WhatsApp */
-  transition: transform 0.3s ease-in-out;
-}
-
-.cta-whatsapp .cta-box:hover {
-  transform: translateY(-5px); /* Efeito suave de levitação ao passar o mouse */
 }
 
 .cta-whatsapp .icon-whatsapp {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .cta-whatsapp .icon-whatsapp i {
-  font-size: 32px;
-  background: #e7f9ee; /* Verde bem clarinho de fundo */
+  font-size: 20px;
+  background: rgba(37, 211, 102, 0.12);
   color: #25d366;
-  padding: 18px;
-  border-radius: 50px;
+  padding: 10px;
+  border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -115,54 +109,50 @@ h6 {
 }
 
 .cta-whatsapp h3 {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 700;
   color: #4b4949;
   font-family: "Raleway", sans-serif;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 }
 
 .cta-whatsapp p {
   color: #777;
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
 }
 
 .cta-whatsapp p small {
   display: block;
-  margin-top: 10px;
-  font-size: 14px;
+  margin-top: 4px;
+  font-size: 12px;
   color: #999;
 }
 
 /* Botão de Ação Estilizado */
 .btn-whatsapp-cta {
   font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
   font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 1px;
+  font-size: 12px;
   display: inline-block;
-  padding: 14px 35px;
+  padding: 9px 22px;
   border-radius: 50px;
   transition: 0.5s;
   background: #25d366;
   color: #fff;
   text-decoration: none;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
 .btn-whatsapp-cta:hover {
   background: #128c7e;
   color: #fff;
-  box-shadow: 0 6px 20px rgba(18, 140, 126, 0.4);
 }
 
 /* Nota de Rodapé LGPD */
 .lgpd-text {
   display: block;
-  margin-top: 25px;
+  margin-top: 10px;
   font-size: 11px;
   color: #bbb;
   font-style: italic;
@@ -174,10 +164,10 @@ h6 {
 /* Responsividade para Mobile */
 @media (max-width: 768px) {
   .cta-whatsapp {
-    padding: 60px 15px;
+    padding: 28px 15px;
   }
   .cta-whatsapp h3 {
-    font-size: 22px;
+    font-size: 17px;
   }
 }
 /*--------------------------------------------------------------
@@ -1063,6 +1053,7 @@ section {
 }
 
 .portfolio .portfolio-item {
+  position: relative;
   margin-bottom: 30px;
 }
 
@@ -1072,6 +1063,35 @@ section {
 
 .portfolio .portfolio-item .portfolio-img img {
   transition: all 0.8s ease-in-out;
+}
+
+.portfolio .portfolio-item .portfolio-img video {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.8s ease-in-out;
+}
+
+.portfolio .portfolio-item .portfolio-img.cycle-imgs {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-item .portfolio-img.cycle-imgs img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out, transform 0.5s ease;
+  will-change: opacity;
+}
+
+.portfolio .portfolio-item .portfolio-img.cycle-imgs img.active {
+  opacity: 1;
 }
 
 .portfolio .portfolio-item .portfolio-info {
@@ -1120,7 +1140,8 @@ section {
   right: 10px;
 }
 
-.portfolio .portfolio-item:hover .portfolio-img img {
+.portfolio .portfolio-item:hover .portfolio-img img,
+.portfolio .portfolio-item:hover .portfolio-img video {
   transform: scale(1.2);
 }
 
@@ -1554,4 +1575,91 @@ section {
 filter: grayscale(1) ;
 -webkit-filter: grayscale(100%); 
 mix-blend-mode: multiply;
+}
+
+/*--------------------------------------------------------------
+# Página ReFerência em Artes
+--------------------------------------------------------------*/
+.hero-referencia {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.card-referencia {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.card-referencia .portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-referencia .portfolio-img img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.card-referencia:hover .portfolio-img img {
+  transform: scale(1.05);
+}
+
+.card-referencia .galeria-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.card-referencia .portfolio-info {
+  position: relative;
+  padding: 15px 20px 20px;
+}
+
+.card-referencia .portfolio-info h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.card-referencia .portfolio-info p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card-referencia .video-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.btn-video {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 30px;
+  background: #f5f5f5;
+  color: #444;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-video:hover {
+  background: #333;
+  color: #fff;
 }

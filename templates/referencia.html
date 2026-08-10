@@ -1,1 +1,394 @@
-<embed src="{{ url_for('static', filename='assets/pdf/referencia.pdf')}}" width="100%" height="100%" />
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ReFerência em Artes | Produção Cultural Independente</title>
+  <meta content="ReFerência em Artes é uma produtora cultural independente criada pelas coreógrafas Renata Versiani e Fernanda Cavalcanti. Produção cultural, direção de movimento e coreografia." name="description">
+  <meta content="dança, coreografia, direção de movimento, produção cultural, Renata Versiani, Fernanda Cavalcanti" name="keywords">
+
+  <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
+
+</head>
+
+<body class="referencia-page">
+
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="#sobre">Sobre</a></li>
+        <li><a class="nav-link scrollto" href="#equipe">Equipe</a></li>
+        <li><a class="nav-link scrollto" href="#projetos">Projetos</a></li>
+        <li><a class="nav-link scrollto" href="#contato">Contato</a></li>
+        <li><a class="nav-link whatsapp-nav" href="https://whatsapp.com/channel/0029VbCtZYKDeOMysH5dMZ3W" target="_blank" rel="noopener noreferrer">Comunidade <i class="bi bi-whatsapp"></i></a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+  </header>
+
+  <section id="hero" class="hero-referencia" style="background-image: url('{{ url_for('static', filename='assets/img/referencia/referencia-hero.jpeg') }}')">
+    <div class="hero-container">
+      <h1 style="font-family: 'Raleway', sans-serif; font-weight: 700;">ReFerência em Artes</h1>
+      <h2>Produção cultural independente · Direção de movimento · Coreografia</h2>
+      <a href="#sobre" class="btn-scroll scrollto" title="Rolar para baixo" aria-label="Rolar para o início do conteúdo"><i class="bx bx-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <section id="sobre" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <span>Sobre a ReFerência</span>
+          <h2>Sobre a ReFerência</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start">
+            <img src="{{ url_for('static', filename='assets/img/referencia/referencia-sobre.jpeg') }}" class="img-fluid rounded shadow-lg" alt="Imagem da produtora ReFerência em Artes" loading="lazy">
+          </div>
+          <div class="col-lg-8 d-flex flex-column align-items-stretch">
+            <div class="content ps-lg-4 d-flex flex-column justify-content-center">
+              <p style="text-align: justify;">O <strong>ReFerência em Artes</strong> é uma produtora cultural independente, criada pelas artistas e coreógrafas <strong>Renata Versiani</strong> e <strong>Fernanda Cavalcanti</strong>. Ela nasce da vontade de levar a dança para o maior número de pessoas e de manter o constante diálogo com outras formas de expressão artística nos seus processos e produtos criativos.</p>
+              <p style="text-align: justify;">A produtora cria um diálogo da dança com os mundos do <strong>esporte, games, moda, artes plásticas, fotografia, música e literatura</strong>, possibilitando oportunidades de trabalho para mais de <strong>100 artistas</strong> desde sua criação.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="equipe" class="services section-bg-soft">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <span>Equipe</span>
+          <h2>Equipe</h2>
+        </div>
+
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-5">
+            <img src="{{ url_for('static', filename='assets/img/referencia/referencia-equipe.jpeg') }}" class="img-fluid rounded shadow-lg" alt="Foto da equipe da ReFerência em Artes" loading="lazy">
+          </div>
+          <div class="col-lg-7">
+            <div class="icon-box light-card h-100">
+              <h4 class="title">Renata Versiani</h4>
+              <p class="description" style="text-align: justify;">Bailarina profissional há mais de 30 anos, atuou por 7 anos como Primeira Bailarina do Theatro Municipal do Rio de Janeiro. Intérprete criadora da Cia de Dança Deborah Colker e das cias Staccato/Paulo Caldas, Atelier de Coreografia/João Saldanha, Paula Maracajá e Flávia Tápias. Assistente de direção e coreografia do Grupo Tápias, Festival Dança em Trânsito 2016 e Porto de Regina Miranda Cia. Cerimônia de abertura das Olimpíadas do RJ/2016. Professora da graduação da Faculdade Escola Angel Vianna, onde se graduou e pós-graduou em Sistema Laban/Bartenieff.</p>
+            </div>
+            <div class="icon-box light-card h-100 mt-4">
+              <h4 class="title">Fernanda Cavalcanti</h4>
+              <p class="description" style="text-align: justify;">Bailarina profissional há mais de 25 anos, formada em ballet clássico pela escola da Ópera de Viena-Áustria. Atuou no Teatro do Estado de Heidelberg-Alemanha, Cia de Dança Deborah Colker, Ateliê coreográfico/João Saldanha, Staccato/Paulo Caldas. Assistente de direção e coreografia na Cia de Dança Deborah Colker, Cerimônia de abertura das Olimpíadas do RJ/2016 e Ópera "Ainadamar" na Scottish Opera Glasgow-Escócia. Diretora pedagógica e artística do Espaço Vibre, academia de dança do Rio de Janeiro.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projetos" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <span>Projetos</span>
+          <h2>Projetos</h2>
+          <p>Grandes eventos, campanhas e criações realizados pela ReFerência em Artes.</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card-referencia">
+              <div class="portfolio-img">
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-loreal-1.jpeg') }}" class="portfolio-lightbox" data-gallery="ref-loreal" title="Congresso L'Oréal Brasil"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-loreal-1.jpeg') }}" class="img-fluid" alt="Congresso L'Oréal Brasil 2024" loading="lazy"></a>
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-loreal-2.png') }}" class="portfolio-lightbox d-none" data-gallery="ref-loreal" title="Congresso L'Oréal Brasil"></a>
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-loreal-3.png') }}" class="portfolio-lightbox d-none" data-gallery="ref-loreal" title="Congresso L'Oréal Brasil"></a>
+                <span class="galeria-badge">+2 fotos</span>
+              </div>
+              <div class="portfolio-info">
+                <h4>Congresso L'Oréal Brasil</h4>
+                <p>Congresso ONE DREAM Team · 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card-referencia">
+              <div class="portfolio-img">
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-desnudo-1.png') }}" class="portfolio-lightbox" data-gallery="ref-desnudo" title="Desnudo Disfarce"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-desnudo-1.png') }}" class="img-fluid" alt="Exposição fotográfica Desnudo Disfarce" loading="lazy"></a>
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-desnudo-2.png') }}" class="portfolio-lightbox d-none" data-gallery="ref-desnudo" title="Desnudo Disfarce"></a>
+                <span class="galeria-badge">+1 foto</span>
+              </div>
+              <div class="portfolio-info">
+                <h4>Desnudo Disfarce</h4>
+                <p>Exposição fotográfica com performance · Fotos: Ernesto Baldan · Matéria no Jornal da Barra</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card-referencia">
+              <div class="portfolio-img">
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-intersecao-1.jpeg') }}" class="portfolio-lightbox" data-gallery="ref-intersecao" title="Interseção 2023"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-intersecao-1.jpeg') }}" class="img-fluid" alt="Interseção 2023" loading="lazy"></a>
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-intersecao-2.png') }}" class="portfolio-lightbox d-none" data-gallery="ref-intersecao" title="Interseção 2023"></a>
+                <span class="galeria-badge">+1 foto</span>
+              </div>
+              <div class="portfolio-info">
+                <h4>Interseção 2023</h4>
+                <p>Azul do céu me indetermina · MANIFESTO: ATO I - Sou, somos · Apresentação Cidade das Artes, agosto</p>
+                <div class="video-links">
+                  <a href="https://youtu.be/4Sur19k6rGQ" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Vídeo 1</a>
+                  <a href="https://youtu.be/LuffWmHZ9CU" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Vídeo 2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card-referencia">
+              <div class="portfolio-img">
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-luan-city.jpeg') }}" class="portfolio-lightbox" title="Luan City 2.0"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-luan-city.jpeg') }}" class="img-fluid" alt="Show Luan City 2.0 no Estádio Mineirão" loading="lazy"></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Luan City 2.0</h4>
+                <p>Assistente de coreografia para o show · gravação do DVD do Luan Santana · Estádio Mineirão, Belo Horizonte · Março 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card-referencia">
+              <div class="portfolio-img">
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-biomarin-1.jpeg') }}" class="portfolio-lightbox" data-gallery="ref-biomarin" title="Congresso Biomarin"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-biomarin-1.jpeg') }}" class="img-fluid" alt="Congresso Biomarin ICON Kick off 2023" loading="lazy"></a>
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-biomarin-2.jpeg') }}" class="portfolio-lightbox d-none" data-gallery="ref-biomarin" title="Congresso Biomarin"></a>
+                <span class="galeria-badge">+1 foto</span>
+              </div>
+              <div class="portfolio-info">
+                <h4>Congresso Biomarin</h4>
+                <p>ICON Kick off meeting · 2023</p>
+                <div class="video-links">
+                  <a href="https://www.instagram.com/reel/CofmTquJ6si/" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i> Reel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card-referencia">
+              <div class="portfolio-img">
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-rockinrio-1.jpeg') }}" class="portfolio-lightbox" data-gallery="ref-rir" title="Rock in Rio"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-rockinrio-1.jpeg') }}" class="img-fluid" alt="Rock in Rio 2022" loading="lazy"></a>
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-rockinrio-2.jpeg') }}" class="portfolio-lightbox d-none" data-gallery="ref-rir" title="Rock in Rio"></a>
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-rockinrio-3.jpeg') }}" class="portfolio-lightbox d-none" data-gallery="ref-rir" title="Rock in Rio"></a>
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-rockinrio-4.jpeg') }}" class="portfolio-lightbox d-none" data-gallery="ref-rir" title="Rock in Rio"></a>
+                <span class="galeria-badge">+3 fotos</span>
+              </div>
+              <div class="portfolio-info">
+                <h4>Rock in Rio</h4>
+                <p>Direção de movimento · 2022</p>
+                <div class="video-links">
+                  <a href="https://youtu.be/jYW66yiz-3I" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Vídeo 1</a>
+                  <a href="https://youtu.be/fUMxYyD5YmQ" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Vídeo 2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card-referencia">
+              <div class="portfolio-img">
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-gamexp-1.jpeg') }}" class="portfolio-lightbox" data-gallery="ref-gamexp" title="Game XP"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-gamexp-1.jpeg') }}" class="img-fluid" alt="Game XP 2019" loading="lazy"></a>
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-gamexp-2.jpeg') }}" class="portfolio-lightbox d-none" data-gallery="ref-gamexp" title="Game XP"></a>
+                <span class="galeria-badge">+1 foto</span>
+              </div>
+              <div class="portfolio-info">
+                <h4>Game XP</h4>
+                <p>Direção de movimento · 2019</p>
+                <div class="video-links">
+                  <a href="https://youtu.be/7YBvxMOv_l0" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Vídeo 1</a>
+                  <a href="https://youtu.be/r9D6lKNtLGo" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Vídeo 2</a>
+                  <a href="https://youtu.be/9GdeKL-l338" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Vídeo 3</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card-referencia">
+              <div class="portfolio-img">
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-premio-olimpico.jpeg') }}" class="portfolio-lightbox" title="Prêmio Brasil Olímpico"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-premio-olimpico.jpeg') }}" class="img-fluid" alt="Prêmio Brasil Olímpico 2019" loading="lazy"></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Prêmio Brasil Olímpico</h4>
+                <p>Direção de movimento · 2019</p>
+                <div class="video-links">
+                  <a href="https://youtu.be/8ALw8L7RpfI" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Vídeo 1</a>
+                  <a href="https://youtu.be/IHq1evx1xQo" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Vídeo 2</a>
+                  <a href="https://youtu.be/VGyb8a5duGM" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Vídeo 3</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card-referencia">
+              <div class="portfolio-img">
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-premio-esport.jpeg') }}" class="portfolio-lightbox" title="Prêmio eSport Brasil"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-premio-esport.jpeg') }}" class="img-fluid" alt="Prêmio eSport Brasil 2019" loading="lazy"></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Prêmio eSport Brasil</h4>
+                <p>Direção de movimento · 2019</p>
+                <div class="video-links">
+                  <a href="https://www.instagram.com/tv/B7_RnlwJ9M5/" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i> Vídeo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card-referencia">
+              <div class="portfolio-img">
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-olimpiadas-1.jpeg') }}" class="portfolio-lightbox" data-gallery="ref-olimp" title="Olimpíadas Rio 2016"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-olimpiadas-1.jpeg') }}" class="img-fluid" alt="Abertura das Olimpíadas Rio 2016" loading="lazy"></a>
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-olimpiadas-2.jpeg') }}" class="portfolio-lightbox d-none" data-gallery="ref-olimp" title="Olimpíadas Rio 2016"></a>
+                <span class="galeria-badge">+1 foto</span>
+              </div>
+              <div class="portfolio-info">
+                <h4>Olimpíadas Rio 2016</h4>
+                <p>Coreógrafas assistentes · Cerimônia de abertura</p>
+                <div class="video-links">
+                  <a href="https://drive.google.com/file/d/1lS8xaCbynVxJgtDuVBQvAoBiMp6Xi2oN/view?usp=sharing" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-play"></i> Vídeo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card-referencia">
+              <div class="portfolio-img">
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-maria-filo.jpeg') }}" class="portfolio-lightbox" title="Campanha Maria Filó"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-maria-filo.jpeg') }}" class="img-fluid" alt="Campanha Maria Filó" loading="lazy"></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Campanha Maria Filó</h4>
+                <p>Direção de movimento · campanha publicitária</p>
+                <div class="video-links">
+                  <a href="https://www.instagram.com/tv/CXmWJkDpACJ/" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i> Vídeo 1</a>
+                  <a href="https://www.instagram.com/tv/CXMKszRpfzn/" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i> Vídeo 2</a>
+                  <a href="https://www.instagram.com/p/CVeFLLlpCcZ/" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i> Foto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card-referencia">
+              <div class="portfolio-img">
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-campanhas.jpeg') }}" class="portfolio-lightbox" title="Campanhas"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-campanhas.jpeg') }}" class="img-fluid" alt="Campanhas publicitárias: Djavan, Múltiplos, Fiat Argo e Americanas" loading="lazy"></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Campanhas</h4>
+                <p>Djavan "Vesúvio" 2018 · Múltiplos · Fiat Argo · Americanas no Rock in Rio 2022</p>
+                <div class="video-links">
+                  <a href="https://www.youtube.com/watch?v=UkM0EKE74NY" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Djavan</a>
+                  <a href="https://www.youtube.com/watch?v=Sdl7oxmZyRA" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Múltiplos</a>
+                  <a href="https://www.youtube.com/watch?v=LBolKaA4DQ8" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Fiat Argo</a>
+                  <a href="https://www.instagram.com/p/CfpD4RgF5xg/" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i> Americanas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card-referencia">
+              <div class="portfolio-img">
+                <a href="{{ url_for('static', filename='assets/img/referencia/projeto-autorais.jpeg') }}" class="portfolio-lightbox" title="Projetos autorais"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-autorais.jpeg') }}" class="img-fluid" alt="Projetos autorais da ReFerência em Artes" loading="lazy"></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Projetos autorais</h4>
+                <p>Olhar de um Corpo · Espaço Aurora SP 2018 · Azul do céu me indetermina 2018-2019 · Todos contra TB - Médicos sem Fronteiras 2017</p>
+                <div class="video-links">
+                  <a href="https://www.youtube.com/watch?v=QvyqXK4LNEU" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Olhar de um Corpo</a>
+                  <a href="https://www.youtube.com/watch?v=2iqd5rrVi8A" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Azul do céu</a>
+                  <a href="https://www.youtube.com/watch?v=WppkA2qW6oE" class="btn-video" target="_blank" rel="noopener noreferrer"><i class="bi bi-play-circle"></i> Todos contra TB</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <span>Contatos</span>
+          <h2>Contatos</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="info-box">
+              <i class="bx bx-share-alt"></i>
+              <h3>Instagram</h3>
+              <p><a href="https://www.instagram.com/referenciaemartes/" target="_blank" rel="noopener noreferrer">@referenciaemartes</a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info-box">
+              <i class="bx bx-envelope"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:referenciaemartes@gmail.com">referenciaemartes@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info-box">
+              <i class="bx bx-phone"></i>
+              <h3>Fernanda Cavalcanti</h3>
+              <p><a href="tel:+5521982334575">+55 (21) 98233-4575</a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info-box">
+              <i class="bx bx-phone"></i>
+              <h3>Renata Versiani</h3>
+              <p><a href="tel:+5521981334332">+55 (21) 98133-4332</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" hidden>
+    <div class="container">
+      <h3>ReFerência em Artes</h3>
+      <div class="social-links">
+        <a href="https://www.instagram.com/referenciaemartes/" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>ReFerência em Artes</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Voltar ao topo"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+</body>
+
+</html>

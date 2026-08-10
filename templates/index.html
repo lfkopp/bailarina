@@ -32,8 +32,8 @@
         <li><a class="nav-link scrollto" href="#about">Sobre mim</a></li>
         <li><a class="nav-link scrollto" href="#trajetoria">Trajetória</a></li>
         
-        <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
         <li><a class="nav-link scrollto" href="#atuacao">Áreas de Atuação</a></li>
+        <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
         <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="#">Drop Down 1</a></li>
@@ -106,7 +106,6 @@
                         <p><em>Rio de Janeiro/RJ </em></p>
                         <p>Projeto aprovado na Lei Rouanet em 2024, em fase de captação.
                         <br>Coreógrafa Assistente da Abertura dos Jogos Olímpicos Rio 2016.
-                        </ul>
                         </p>
                       </div>
                       <div class="resume-item">
@@ -129,9 +128,7 @@
           </div>
         </div>
 
-      </div>
     </section>
-
 
     <section id="trajetoria" class="services">
       <div class="container">
@@ -148,7 +145,7 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-check-shield"></i></div>
               <h4 class="title"><a href="">Bailarina Clássica</a></h4>
-              <p class="description">Aos 13 anos, Renata deu seus primeiros passos profissionais, participando de "A Divina Comédia" dirigida por Regina Miranda e integrando o grupo Ballet Oficina de Edmundo Carijó. Aos 15, ingressou no Teatro Municipal do Rio De Janeiro, onde construiu uma sólida carreira como bailarina clássica ao longo de 11 anos. Rapidamente ascendendo de bailarina de corpo de baile para solista e, aos 17 anos, atuando como a Primeira Bailarina, sob a direção artística de Jean-Yves Lormeau. Renata dançou os grandes papéis principais em obras clássicas e contemporâneas, sendo dirigida por renomados artistas nacionais e internacionais.</p>
+              <p class="description">Aos 13 anos, Renata deu seus primeiros passos profissionais, participando de "A Divina Comédia" dirigida por Regina Miranda e integrando o grupo Ballet Oficina de Edmundo Carijó. Aos 15, ingressou no Theatro Municipal do Rio de Janeiro (TMRJ), onde construiu uma sólida carreira como bailarina clássica ao longo de 11 anos. Rapidamente ascendendo de bailarina de corpo de baile para solista e, aos 17 anos, atuando como a Primeira Bailarina, sob a direção artística de Jean-Yves Lormeau. Renata dançou os grandes papéis principais em obras clássicas e contemporâneas, sendo dirigida por renomados artistas nacionais e internacionais.</p>
             </div>
           </div>
 
@@ -192,7 +189,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="{{ url_for('static', filename='assets/img/testimonials/renata.png') }}" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='assets/img/equipe/equipe_renata.jpg') }}" class="testimonial-img" alt="">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Uma eterna apaixonada, curiosa e pesquisadora do movimento e de todas as capacidades quânticas e corporais que o ser humano tem para se expressar e se comunicar. 
@@ -204,7 +201,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="{{ url_for('static', filename='assets/img/testimonials/renata.png') }}" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='assets/img/equipe/equipe_renata.jpg') }}" class="testimonial-img" alt="">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   É No corpo e nas suas infinitas possibilidades de expressão que o artista cênico se coloca no mundo.
@@ -269,37 +266,11 @@
               </div>
     
             </div>
-    
           </div>
         </section>
         
 
-<section id="whatsapp-canal" class="cta-whatsapp">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="cta-box">
-          <div class="icon-whatsapp" style="font-size: 40px; color: #25d366; margin-bottom: 15px;">
-            <i class="bi bi-whatsapp"></i>
-          </div>
-          <h3>Acompanhe meus Bastidores</h3>
-          <p>Assine meu canal oficial para receber conteúdos exclusivos sobre direção de movimento e arte cênica. 
-            <br><small>Neste formato, seu número permanece privado e oculto para outros membros.</small>
-          </p>
-          
-          <a href="https://whatsapp.com/channel/0029VbCtZYKDeOMysH5dMZ3W" class="btn-whatsapp-cta" target="_blank" rel="noopener noreferrer">
-            Seguir Canal Oficial
-          </a>
 
-          <span class="lgpd-text">
-            Ao seguir, o WhatsApp processa seus dados conforme os termos da plataforma. Você pode deixar o canal a qualquer momento clicando em "Sair".
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    
     <section id="portfolio" class="portfolio">
       <div class="container">
 
@@ -314,180 +285,486 @@
           <li data-filter=".filter-contemporanea">Contemporânea</li>
           <li data-filter=".filter-carnaval">Carnaval</li>
           <li data-filter=".filter-classica">Clássica</li>
-          <li data-filter=".filter-novela">Novela</li>
+          <li data-filter=".filter-novela">Novela/Teatro</li>
+          <li data-filter=".filter-corporativo">Corporativo</li>
+          <li data-filter=".filter-eventos">Eventos</li>
         </ul>
 
         <div class="row portfolio-container">
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-contemporanea">
-            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/4por4.gif') }}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img"><video src="{{ url_for('static', filename='assets/img/portfolio/4por4.mp4') }}" class="img-fluid" autoplay loop muted playsinline></video></div>
             <div class="portfolio-info">
               <h4>intérprete/criadora</h4>
               <p>4x4 Cia. Deborah Colker</p>
               <p>foto: Flavio Colker</p>
-              <a href="https://player.vimeo.com/video/926696765?autoplay=1&loop=1&title=0&byline=0&controls=0&muted=1" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
-              <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+              <a href="{{ url_for('static', filename='assets/img/portfolio/4por4.mp4') }}" data-gallery="ref-4x4" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/colker-4por4.jpg') }}" data-gallery="ref-4x4" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
             </div>
           </div>
 
         
-          <div class="col-lg-3 col-md-4 portfolio-item filter-classica">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-classica">
             <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-1.jpg') }}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>bailarina</h4>
               <p>Visões Musicas de Marcia Haydee</p>
               <p>Foto: Bruno Veiga</p>
-              <a href="https://youtu.be/hIEpMmya6bQ?si=tRBJFdDKi1JoM84D&controls=0" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="https://youtu.be/hIEpMmya6bQ?si=tRBJFdDKi1JoM84D&controls=0" data-gallery="ref-visoes" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
               <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
             </div>
           </div>
 
                   
-          <div class="col-lg-3 col-md-4 portfolio-item filter-novela">
-            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/tango.gif') }}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-novela">
+            <div class="portfolio-img"><video src="{{ url_for('static', filename='assets/img/portfolio/tango.mp4') }}" class="img-fluid" autoplay loop muted playsinline></video></div>
             <div class="portfolio-info">
               <h4>participação especial</h4>
               <p>Novela Globo Caminho das Índias</p>
-              <a href="{{ url_for('static', filename='assets/img/portfolio/tango.gif') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/tango.mp4') }}" data-gallery="ref-caminho-indias" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
               <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-carnaval">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-carnaval">
             <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-2.jpg') }}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Equipe criativa de Alex Neoral</h4>
               <p>Comissão de frente da Imperatriz Leopoldinense</p>
-              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-2.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-2.jpg') }}" data-gallery="ref-imperatriz" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
               <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-contemporanea">
-            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/corpo_amoroso.gif') }}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img"><video src="{{ url_for('static', filename='assets/img/portfolio/corpo_amoroso.mp4') }}" class="img-fluid" autoplay loop muted playsinline></video></div>
             <div class="portfolio-info">
               <h4>Concepção, idealização, coreografia, edição, interprete.</h4>
               <p>Projeto autoral – Corpo Amoroso</p>
-              <a href="{{ url_for('static', filename='assets/img/portfolio/corpo_amoroso.gif') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/corpo_amoroso.mp4') }}" data-gallery="ref-corpo-amoroso" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
               <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
             </div>
           </div>
 
           
-          <div class="col-lg-3 col-md-4 portfolio-item filter-contemporanea">
-            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/azul.gif') }}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img"><video src="{{ url_for('static', filename='assets/img/portfolio/azul.mp4') }}" class="img-fluid" autoplay loop muted playsinline></video></div>
             <div class="portfolio-info">
               <h4>intérprete e cridora</h4>
               <p>O Azul do céu me indeteremina</p>
               <p>direção e concepção: Flávia Tápias</p>
-              <a href="{{ url_for('static', filename='assets/img/portfolio/azul.gif') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/azul.mp4') }}" data-gallery="ref-azul" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
               <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-carnaval">
-            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-3.jpg') }}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-carnaval">
+            <div class="portfolio-img cycle-imgs">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-3.jpg') }}" alt="Comissão de frente da Unidos da Tijuca">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/unidos-tijuca.jpg') }}" alt="Unidos da Tijuca">
+              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-3.jpg') }}" data-gallery="ref-unidos" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/unidos-tijuca.jpg') }}" data-gallery="ref-unidos" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+            </div>
             <div class="portfolio-info">
               <h4>Equipe criativa de Alex Neoral</h4>
-              <p>Comissão de frente da Unidos da tijuca</p>
-              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-3.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
-              <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+              <p>Comissão de frente da Unidos da Tijuca</p>
             </div>
           </div>
 
-          
-          <div class="col-lg-3 col-md-4 portfolio-item filter-contemporanea">
-            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/dinamo.gif') }}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img"><video src="{{ url_for('static', filename='assets/img/portfolio/dinamo.mp4') }}" class="img-fluid" autoplay loop muted playsinline></video></div>
             <div class="portfolio-info">
               <h4>intérprete e cridora</h4>
               <p>Dinamo Cia Deborah Colker </p>
-              <a href="{{ url_for('static', filename='assets/img/portfolio/dinamo.gif') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
-              <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+              <a href="{{ url_for('static', filename='assets/img/portfolio/dinamo.mp4') }}" data-gallery="ref-dinamo" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/colker-dinamo.jpg') }}" data-gallery="ref-dinamo" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-novela">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-novela">
             <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-4.jpg') }}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Assistência de direção e coreografia</h4>
               <p>Novela da Globo Império</p>
-              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-4.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-4.jpg') }}" data-gallery="ref-imperio" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
               <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-contemporanea">
-            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-5.jpg') }}" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4></h4>
-              <p>Olhar de um corpo para o Espaço aurora SP</p>
-              <p>exposição de Tunga</p>
-              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-5.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
-              <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 portfolio-item filter-contemporanea">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
             <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/intersecao.png') }}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4></h4>
-              <p>Interseção</p>
+              <h4>Interseção</h4>
               <p>foto: Ernesto Baldan</p>
-              <a href="{{ url_for('static', filename='assets/img/portfolio/intersecao.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/intersecao.png') }}" data-gallery="ref-intersecao" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
               <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
             </div>
           </div>
 
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-classica">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-classica">
             <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-6.jpg') }}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>primeira bailarina em Ganzaty</h4>
               <p>La Bayadere remontagem de  Natalia Makarova no TMRJ </p>
-              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-6.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-6.jpg') }}" data-gallery="ref-bayadere-makarova" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
               <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-classica">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-classica">
             <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-7.jpg') }}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>solista da dança Árabe</h4>
               <p>Quebra Nozes de Dalal Aschar  no TMRJ </p>
-              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-7.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-7.jpg') }}" data-gallery="ref-quebra-nozes" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
               <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-contemporanea">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
             <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-8.jpg') }}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4></h4>
-              <p>Sessão de fotos particular na Casa da Glória </p>
-              <p>foto: Cinese</p>
-              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-8.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <h4>Sessão de fotos particular</h4>
+              <p>Casa da Glória · foto: Cinese</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-8.jpg') }}" data-gallery="ref-casa-gloria" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
               <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-contemporanea">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
             <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-9.jpg') }}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>intérprete e criadora</h4>
               <p>Tudo que não invento é falso de Paula Maracaja</p>
-              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-9.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-9.jpg') }}" data-gallery="ref-tudo-invento" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
               <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
             </div>
           </div>
 
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-classica">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-classica">
             <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-10.jpg') }}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>bailarina</h4>
               <p>Águas Primaveris no TMRJ</p>
-              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-10.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-10.jpg') }}" data-gallery="ref-aguas-primaveris" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
               <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img cycle-imgs">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/inventor-inutilezas-1.jpg') }}" alt="Inventor de Inutilezas">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/inventor-inutilezas-2.jpg') }}" alt="Inventor de Inutilezas">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/inventor-inutilezas-3.jpg') }}" alt="Inventor de Inutilezas">
+            </div>
+            <div class="portfolio-info">
+              <h4>Direção · Idealização · Realização</h4>
+              <p>Inventor de Inutilezas · PRONAC 2511892</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/inventor-inutilezas-1.jpg') }}" data-gallery="ref-inventor" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/inventor-inutilezas-2.jpg') }}" data-gallery="ref-inventor" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/inventor-inutilezas-3.jpg') }}" data-gallery="ref-inventor" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img cycle-imgs">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/farmacia-alma-2.jpg') }}" alt="Farmácia da Alma">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/farmacia-alma-3.jpg') }}" alt="Farmácia da Alma">
+            </div>
+            <div class="portfolio-info">
+              <h4>Direção Técnica</h4>
+              <p>Farmácia da Alma · Espaço VIBRE 2025</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/farmacia-alma-2.jpg') }}" data-gallery="ref-farmacia" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/farmacia-alma-3.jpg') }}" data-gallery="ref-farmacia" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img cycle-imgs">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/tormenta-1.jpg') }}" alt="Tormenta">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/tormenta-2.jpg') }}" alt="Tormenta">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/tormenta-3.jpg') }}" alt="Tormenta">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/tormenta-4.jpg') }}" alt="Tormenta">
+            </div>
+            <div class="portfolio-info">
+              <h4>Direção · Coreografia</h4>
+              <p>Tormenta · intérprete idealizador: Gui Soifer</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/tormenta-1.jpg') }}" data-gallery="ref-tormenta" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/tormenta-2.jpg') }}" data-gallery="ref-tormenta" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/tormenta-3.jpg') }}" data-gallery="ref-tormenta" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/tormenta-4.jpg') }}" data-gallery="ref-tormenta" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img cycle-imgs">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/staccato-1.jpg') }}" alt="Staccato">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/staccato-2.jpg') }}" alt="Staccato">
+            </div>
+            <div class="portfolio-info">
+              <h4>Direção</h4>
+              <p>Staccato · Companhia de Ballet da Cidade de Niterói</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/staccato-1.jpg') }}" data-gallery="ref-staccato" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/staccato-2.jpg') }}" data-gallery="ref-staccato" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-novela">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/tres-dias-ou-menos.jpg') }}" class="img-fluid" alt="Três Dias ou Menos"></div>
+            <div class="portfolio-info">
+              <h4>Direção</h4>
+              <p>Três Dias ou Menos</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/tres-dias-ou-menos.jpg') }}" data-gallery="ref-tres-dias" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/tres-filosofos.jpg') }}" class="img-fluid" alt="Três Filósofos"></div>
+            <div class="portfolio-info">
+              <h4>Direção</h4>
+              <p>Três Filósofos</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/tres-filosofos.jpg') }}" data-gallery="ref-tres-filosofos" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/colker-rota.jpg') }}" class="img-fluid" alt="Rota · Deborah Colker"></div>
+            <div class="portfolio-info">
+              <h4>Deborah Colker</h4>
+              <p>Rota · 2002 · intérprete criadora</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/colker-rota.jpg') }}" data-gallery="ref-colker-rota" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/colker-mix.jpg') }}" class="img-fluid" alt="Mix · Deborah Colker"></div>
+            <div class="portfolio-info">
+              <h4>Deborah Colker</h4>
+              <p>Mix · 2004 · intérprete criadora</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/colker-mix.jpg') }}" data-gallery="ref-colker-mix" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/colker-casa.jpg') }}" class="img-fluid" alt="Casa · Deborah Colker"></div>
+            <div class="portfolio-info">
+              <h4>Deborah Colker</h4>
+              <p>Casa · 2003 · intérprete criadora</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/colker-casa.jpg') }}" data-gallery="ref-colker-casa" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/colker-no.jpg') }}" class="img-fluid" alt="Nó · Deborah Colker"></div>
+            <div class="portfolio-info">
+              <h4>Deborah Colker</h4>
+              <p>Nó · 2005 · intérprete criadora</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/colker-no.jpg') }}" data-gallery="ref-colker-no" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/colker-cruel.jpg') }}" class="img-fluid" alt="Cruel · Deborah Colker"></div>
+            <div class="portfolio-info">
+              <h4>Deborah Colker</h4>
+              <p>Cruel · 2008 · intérprete criadora</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/colker-cruel.jpg') }}" data-gallery="ref-colker-cruel" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-contemporanea">
+            <div class="portfolio-img cycle-imgs">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-5.jpg') }}" alt="Olhar de um Corpo">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/olhar-um-corpo.jpg') }}" alt="Olhar de um Corpo">
+            </div>
+            <div class="portfolio-info">
+              <h4>Olhar de um Corpo</h4>
+              <p>Direção · vídeo-dança · Exposição de Tunga · Espaço Aurora SP</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-5.jpg') }}" data-gallery="ref-olhar" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/olhar-um-corpo.jpg') }}" data-gallery="ref-olhar" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-classica">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/teatro-megera-domada.jpg') }}" class="img-fluid" alt="Megera Domada"></div>
+            <div class="portfolio-info">
+              <h4>Theatro Municipal do Rio de Janeiro (TMRJ)</h4>
+              <p>Megera Domada · Catarina · primeira bailarina</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/teatro-megera-domada.jpg') }}" data-gallery="ref-tmrj-megera" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-classica">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/teatro-la-sylphilde.jpg') }}" class="img-fluid" alt="La Sylphilde"></div>
+            <div class="portfolio-info">
+              <h4>Theatro Municipal do Rio de Janeiro (TMRJ)</h4>
+              <p>La Sylphilde · Effie · primeira bailarina</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/teatro-la-sylphilde.jpg') }}" data-gallery="ref-tmrj-sylphilde" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-classica">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/teatro-contra-ataque.jpg') }}" class="img-fluid" alt="Contra Ataque"></div>
+            <div class="portfolio-info">
+              <h4>Theatro Municipal do Rio de Janeiro (TMRJ)</h4>
+              <p>Contra Ataque · Regina Miranda · primeira bailarina</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/teatro-contra-ataque.jpg') }}" data-gallery="ref-tmrj-contra-ataque" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-classica">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/teatro-corsario.jpg') }}" class="img-fluid" alt="Corsário"></div>
+            <div class="portfolio-info">
+              <h4>Theatro Municipal do Rio de Janeiro (TMRJ)</h4>
+              <p>Corsário · primeira bailarina</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/teatro-corsario.jpg') }}" data-gallery="ref-tmrj-corsario" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-classica">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/teatro-giselle.jpg') }}" class="img-fluid" alt="Giselle"></div>
+            <div class="portfolio-info">
+              <h4>Theatro Municipal do Rio de Janeiro (TMRJ)</h4>
+              <p>Giselle · primeira bailarina</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/teatro-giselle.jpg') }}" data-gallery="ref-tmrj-giselle" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-classica">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/teatro-don-quixote.jpg') }}" class="img-fluid" alt="Dom Quixote"></div>
+            <div class="portfolio-info">
+              <h4>Theatro Municipal do Rio de Janeiro (TMRJ)</h4>
+              <p>Dom Quixote · primeira bailarina</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/teatro-don-quixote.jpg') }}" data-gallery="ref-tmrj-don-quixote" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-classica">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/teatro-serenade.jpg') }}" class="img-fluid" alt="Serenade de Balanchine"></div>
+            <div class="portfolio-info">
+              <h4>Theatro Municipal do Rio de Janeiro (TMRJ)</h4>
+              <p>Serenade de Balanchine · Russa · primeira bailarina</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/teatro-serenade.jpg') }}" data-gallery="ref-tmrj-serenade" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-classica">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/portfolio/teatro-la-bayadere.jpg') }}" class="img-fluid" alt="La Bayadere"></div>
+            <div class="portfolio-info">
+              <h4>Theatro Municipal do Rio de Janeiro (TMRJ)</h4>
+              <p>La Bayadere · Ganzati · primeira bailarina</p>
+              <a href="{{ url_for('static', filename='assets/img/portfolio/teatro-la-bayadere.jpg') }}" data-gallery="ref-tmrj-bayadere" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-corporativo">
+            <div class="portfolio-img cycle-imgs">
+              <img src="{{ url_for('static', filename='assets/img/referencia/projeto-loreal-1.jpeg') }}" alt="Congresso L'Oréal Brasil 2024">
+              <img src="{{ url_for('static', filename='assets/img/referencia/projeto-loreal-2.png') }}" alt="Congresso L'Oréal Brasil 2024">
+              <img src="{{ url_for('static', filename='assets/img/referencia/projeto-loreal-3.png') }}" alt="Congresso L'Oréal Brasil 2024">
+            </div>
+            <div class="portfolio-info">
+              <h4>Congresso L'Oréal Brasil</h4>
+              <p>Congresso ONE DREAM Team · 2024</p>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-loreal-1.jpeg') }}" data-gallery="ref-loreal" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-loreal-2.png') }}" data-gallery="ref-loreal" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-loreal-3.png') }}" data-gallery="ref-loreal" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-corporativo">
+            <div class="portfolio-img cycle-imgs">
+              <img src="{{ url_for('static', filename='assets/img/referencia/projeto-biomarin-1.jpeg') }}" alt="Congresso Biomarin 2023">
+              <img src="{{ url_for('static', filename='assets/img/referencia/projeto-biomarin-2.jpeg') }}" alt="Congresso Biomarin 2023">
+            </div>
+            <div class="portfolio-info">
+              <h4>Congresso Biomarin</h4>
+              <p>ICON Kick off meeting · 2023</p>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-biomarin-1.jpeg') }}" data-gallery="ref-biomarin" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-biomarin-2.jpeg') }}" data-gallery="ref-biomarin" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-corporativo">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-maria-filo.jpeg') }}" class="img-fluid" alt="Campanha Maria Filó"></div>
+            <div class="portfolio-info">
+              <h4>Campanha Maria Filó</h4>
+              <p>Direção de movimento · campanha publicitária</p>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-maria-filo.jpeg') }}" data-gallery="ref-maria-filo" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-eventos">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-luan-city.jpeg') }}" class="img-fluid" alt="Luan City 2.0"></div>
+            <div class="portfolio-info">
+              <h4>Luan City 2.0</h4>
+              <p>Assistente de coreografia · gravação do DVD · Mineirão, BH · 2023</p>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-luan-city.jpeg') }}" data-gallery="ref-luan-city" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-eventos">
+            <div class="portfolio-img cycle-imgs">
+              <img src="{{ url_for('static', filename='assets/img/referencia/projeto-rockinrio-1.jpeg') }}" alt="Rock in Rio 2022">
+              <img src="{{ url_for('static', filename='assets/img/referencia/projeto-rockinrio-2.jpeg') }}" alt="Rock in Rio 2022">
+              <img src="{{ url_for('static', filename='assets/img/referencia/projeto-rockinrio-3.jpeg') }}" alt="Rock in Rio 2022">
+              <img src="{{ url_for('static', filename='assets/img/referencia/projeto-rockinrio-4.jpeg') }}" alt="Rock in Rio 2022">
+            </div>
+            <div class="portfolio-info">
+              <h4>Rock in Rio</h4>
+              <p>Direção de movimento · 2022</p>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-rockinrio-1.jpeg') }}" data-gallery="ref-rir" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-rockinrio-2.jpeg') }}" data-gallery="ref-rir" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-rockinrio-3.jpeg') }}" data-gallery="ref-rir" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-rockinrio-4.jpeg') }}" data-gallery="ref-rir" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-eventos">
+            <div class="portfolio-img cycle-imgs">
+              <img src="{{ url_for('static', filename='assets/img/referencia/projeto-gamexp-1.jpeg') }}" alt="Game XP 2019">
+              <img src="{{ url_for('static', filename='assets/img/referencia/projeto-gamexp-2.jpeg') }}" alt="Game XP 2019">
+            </div>
+            <div class="portfolio-info">
+              <h4>Game XP</h4>
+              <p>Direção de movimento · 2019</p>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-gamexp-1.jpeg') }}" data-gallery="ref-gamexp" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-gamexp-2.jpeg') }}" data-gallery="ref-gamexp" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-eventos">
+            <div class="portfolio-img cycle-imgs">
+              <img src="{{ url_for('static', filename='assets/img/referencia/projeto-olimpiadas-1.jpeg') }}" alt="Olimpíadas Rio 2016">
+              <img src="{{ url_for('static', filename='assets/img/referencia/projeto-olimpiadas-2.jpeg') }}" alt="Olimpíadas Rio 2016">
+            </div>
+            <div class="portfolio-info">
+              <h4>Olimpíadas Rio 2016</h4>
+              <p>Direção de movimento · abertura</p>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-olimpiadas-1.jpeg') }}" data-gallery="ref-olimp" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-olimpiadas-2.jpeg') }}" data-gallery="ref-olimp" class="portfolio-lightbox d-none" title="Renata Versiani"></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-eventos">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-premio-olimpico.jpeg') }}" class="img-fluid" alt="Prêmio Brasil Olímpico 2019"></div>
+            <div class="portfolio-info">
+              <h4>Prêmio Brasil Olímpico</h4>
+              <p>Direção de movimento · 2019</p>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-premio-olimpico.jpeg') }}" data-gallery="ref-premio-olimpico" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-eventos">
+            <div class="portfolio-img"><img src="{{ url_for('static', filename='assets/img/referencia/projeto-premio-esport.jpeg') }}" class="img-fluid" alt="Prêmio eSport Brasil 2019"></div>
+            <div class="portfolio-info">
+              <h4>Prêmio eSport Brasil</h4>
+              <p>Direção de movimento · 2019</p>
+              <a href="{{ url_for('static', filename='assets/img/referencia/projeto-premio-esport.jpeg') }}" data-gallery="ref-premio-esport" class="portfolio-lightbox preview-link" title="Renata Versiani"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
@@ -527,6 +804,26 @@
           </div>
         </div>
 
+        <div class="cta-whatsapp">
+          <div class="cta-box">
+            <div class="icon-whatsapp">
+              <i class="bi bi-whatsapp"></i>
+            </div>
+            <h3>Acompanhe meus Bastidores</h3>
+            <p>Assine meu canal oficial para receber conteúdos exclusivos sobre direção de movimento e arte cênica. 
+              <br><small>Neste formato, seu número permanece privado e oculto para outros membros.</small>
+            </p>
+
+            <a href="https://whatsapp.com/channel/0029VbCtZYKDeOMysH5dMZ3W" class="btn-whatsapp-cta" target="_blank" rel="noopener noreferrer">
+              Seguir Canal Oficial
+            </a>
+
+            <span class="lgpd-text">
+              Ao seguir, o WhatsApp processa seus dados conforme os termos da plataforma. Você pode deixar o canal a qualquer momento clicando em "Sair".
+            </span>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -552,13 +849,10 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 
-  <script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
   <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
   <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
   <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
   <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
 
 </body>
