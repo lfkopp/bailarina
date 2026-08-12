@@ -237,15 +237,31 @@
   /**
    * Portfolio details slider
    */
-  if (typeof Swiper !== 'undefined' && select('.portfolio-details-slider')) {
-    new Swiper('.portfolio-details-slider', {
-      speed: 400,
+  if (typeof Swiper !== 'undefined') {
+    document.querySelectorAll('.portfolio-details-slider').forEach(function (el) {
+      var pag = el.querySelector('.swiper-pagination');
+      var prevBtn = el.querySelector('.swiper-button-prev');
+      var nextBtn = el.querySelector('.swiper-button-next');
+      var options = {
+        speed: 400
+      };
 
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
+      if (pag) {
+        options.pagination = {
+          el: pag,
+          type: 'bullets',
+          clickable: true
+        };
       }
+
+      if (prevBtn && nextBtn) {
+        options.navigation = {
+          prevEl: prevBtn,
+          nextEl: nextBtn
+        };
+      }
+
+      new Swiper(el, options);
     });
   }
 
